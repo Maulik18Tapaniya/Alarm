@@ -152,9 +152,10 @@
                         <!-- Monday -->
                         <TextView
                             android:id="@+id/btnDayMon"
-                            android:layout_width="@dimen/_32sdp"
+                            android:layout_width="0dp"
                             android:layout_height="@dimen/_32sdp"
-                            android:layout_marginHorizontal="@dimen/_3sdp"
+                            android:layout_weight="1"
+                            android:layout_marginHorizontal="@dimen/_2sdp"
                             android:background="@drawable/bg_day_chip_selector"
                             android:gravity="center"
                             android:text="M"
@@ -165,9 +166,10 @@
                         <!-- Tuesday -->
                         <TextView
                             android:id="@+id/btnDayTue"
-                            android:layout_width="@dimen/_32sdp"
+                            android:layout_width="0dp"
                             android:layout_height="@dimen/_32sdp"
-                            android:layout_marginHorizontal="@dimen/_3sdp"
+                            android:layout_weight="1"
+                            android:layout_marginHorizontal="@dimen/_2sdp"
                             android:background="@drawable/bg_day_chip_selector"
                             android:gravity="center"
                             android:text="T"
@@ -178,9 +180,10 @@
                         <!-- Wednesday -->
                         <TextView
                             android:id="@+id/btnDayWed"
-                            android:layout_width="@dimen/_32sdp"
+                            android:layout_width="0dp"
                             android:layout_height="@dimen/_32sdp"
-                            android:layout_marginHorizontal="@dimen/_3sdp"
+                            android:layout_weight="1"
+                            android:layout_marginHorizontal="@dimen/_2sdp"
                             android:background="@drawable/bg_day_chip_selector"
                             android:gravity="center"
                             android:text="W"
@@ -191,9 +194,10 @@
                         <!-- Thursday -->
                         <TextView
                             android:id="@+id/btnDayThu"
-                            android:layout_width="@dimen/_32sdp"
+                            android:layout_width="0dp"
                             android:layout_height="@dimen/_32sdp"
-                            android:layout_marginHorizontal="@dimen/_3sdp"
+                            android:layout_weight="1"
+                            android:layout_marginHorizontal="@dimen/_2sdp"
                             android:background="@drawable/bg_day_chip_selector"
                             android:gravity="center"
                             android:text="T"
@@ -204,9 +208,10 @@
                         <!-- Friday -->
                         <TextView
                             android:id="@+id/btnDayFri"
-                            android:layout_width="@dimen/_32sdp"
+                            android:layout_width="0dp"
                             android:layout_height="@dimen/_32sdp"
-                            android:layout_marginHorizontal="@dimen/_3sdp"
+                            android:layout_weight="1"
+                            android:layout_marginHorizontal="@dimen/_2sdp"
                             android:background="@drawable/bg_day_chip_selector"
                             android:gravity="center"
                             android:text="F"
@@ -217,9 +222,10 @@
                         <!-- Saturday -->
                         <TextView
                             android:id="@+id/btnDaySat"
-                            android:layout_width="@dimen/_32sdp"
+                            android:layout_width="0dp"
                             android:layout_height="@dimen/_32sdp"
-                            android:layout_marginHorizontal="@dimen/_3sdp"
+                            android:layout_weight="1"
+                            android:layout_marginHorizontal="@dimen/_2sdp"
                             android:background="@drawable/bg_day_chip_selector"
                             android:gravity="center"
                             android:text="S"
@@ -230,9 +236,10 @@
                         <!-- Sunday -->
                         <TextView
                             android:id="@+id/btnDaySun"
-                            android:layout_width="@dimen/_32sdp"
+                            android:layout_width="0dp"
                             android:layout_height="@dimen/_32sdp"
-                            android:layout_marginHorizontal="@dimen/_3sdp"
+                            android:layout_weight="1"
+                            android:layout_marginHorizontal="@dimen/_2sdp"
                             android:background="@drawable/bg_day_chip_selector"
                             android:gravity="center"
                             android:text="S"
