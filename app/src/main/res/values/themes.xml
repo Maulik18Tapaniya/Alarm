@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Alarm" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize light theme. -->
+        <item name="colorPrimary">@color/primary_indigo</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/primary_indigo_container</item>
+        <item name="colorOnPrimaryContainer">@color/primary_indigo_dark</item>
+        <item name="android:windowBackground">@color/bg_light</item>
+        <item name="colorSurface">@color/surface_light</item>
+        <item name="colorOnSurface">@color/text_primary_light</item>
+        <item name="colorSurfaceVariant">@color/surface_variant_light</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary_light</item>
+    </style>
+
+    <style name="Theme.Alarm" parent="Base.Theme.Alarm" />
+
+    <style name="Theme.Alarm.FullScreenRing" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="android:windowBackground">@color/alarm_ring_bg</item>
+        <item name="android:statusBarColor">@color/alarm_ring_bg</item>
+        <item name="android:navigationBarColor">@color/alarm_ring_bg</item>
+    </style>
+</resources>

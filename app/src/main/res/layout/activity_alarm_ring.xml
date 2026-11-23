@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootRingLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/alarm_ring_bg"
+    android:keepScreenOn="true"
+    android:padding="@dimen/_24sdp">
+
+    <!-- Glowing Alarm Icon / Indicator -->
+    <ImageView
+        android:id="@+id/ivAlarmIcon"
+        android:layout_width="@dimen/_64sdp"
+        android:layout_height="@dimen/_64sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:contentDescription="@string/alarm_ringing"
+        android:src="@drawable/ic_alarm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/primary_indigo_light" />
+
+    <TextView
+        android:id="@+id/tvAlarmRingingHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/alarm_ringing"
+        android:textColor="@color/primary_indigo_light"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivAlarmIcon" />
+
+    <!-- Current Ringing Digital Time Display -->
+    <TextView
+        android:id="@+id/tvRingTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_54ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAlarmRingingHeader"
+        tools:text="07:30" />
+
+    <!-- AM / PM -->
+    <TextView
+        android:id="@+id/tvRingAmPm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/text_secondary_dark"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvRingTime"
+        tools:text="AM" />
+
+    <!-- Alarm Title / Label -->
+    <TextView
+        android:id="@+id/tvRingTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvRingAmPm"
+        tools:text="Morning Workout" />
+
+    <!-- Controls Container -->
+    <LinearLayout
+        android:id="@+id/layoutControls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_32sdp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Snooze Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSnooze"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/snooze"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp"
+            app:cornerRadius="@dimen/_24sdp"
+            app:icon="@drawable/ic_snooze"
+            app:iconGravity="textStart"
+            app:iconTint="@color/white"
+            app:strokeColor="@color/surface_variant_dark"
+            app:strokeWidth="1dp" />
+
+        <!-- Stop / Dismiss Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnStop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_52sdp"
+            android:backgroundTint="@color/danger_rose"
+            android:fontFamily="sans-serif-bold"
+            android:text="@string/stop"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp"
+            app:cornerRadius="@dimen/_26sdp"
+            app:icon="@drawable/ic_stop"
+            app:iconGravity="textStart"
+            app:iconTint="@color/white" />
+
+        <TextView
+            android:id="@+id/tvStopHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="@string/slide_or_tap_to_stop"
+            android:textColor="@color/text_secondary_dark"
+            android:textSize="@dimen/_11ssp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

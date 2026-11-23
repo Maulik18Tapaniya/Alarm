@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Primary Theme Colors -->
+    <color name="primary_indigo">#4F46E5</color>
+    <color name="primary_indigo_light">#818CF8</color>
+    <color name="primary_indigo_dark">#3730A3</color>
+    <color name="primary_indigo_container">#EEF2FF</color>
+    <color name="primary_indigo_container_dark">#1E1B4B</color>
+
+    <!-- Accent & Status -->
+    <color name="accent_amber">#F59E0B</color>
+    <color name="danger_rose">#F43F5E</color>
+    <color name="success_emerald">#10B981</color>
+    
+    <!-- Surface / Background (Light) -->
+    <color name="bg_light">#F8FAFC</color>
+    <color name="surface_light">#FFFFFF</color>
+    <color name="surface_variant_light">#E2E8F0</color>
+    <color name="text_primary_light">#0F172A</color>
+    <color name="text_secondary_light">#64748B</color>
+    
+    <!-- Surface / Background (Dark) -->
+    <color name="bg_dark">#0F172A</color>
+    <color name="surface_dark">#1E293B</color>
+    <color name="surface_variant_dark">#334155</color>
+    <color name="text_primary_dark">#F8FAFC</color>
+    <color name="text_secondary_dark">#94A3B8</color>
+
+    <color name="alarm_ring_bg">#090D16</color>
+</resources>
