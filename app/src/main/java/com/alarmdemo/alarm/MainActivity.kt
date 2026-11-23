@@ -86,6 +86,7 @@ class MainActivity : AppCompatActivity() {
             layoutManager = LinearLayoutManager(this@MainActivity)
             adapter = alarmAdapter
             setHasFixedSize(true)
+            itemAnimator = null
         }
     }
 
@@ -108,13 +109,14 @@ class MainActivity : AppCompatActivity() {
         lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
                 viewModel.alarms.collect { alarms ->
-                    alarmAdapter.submitList(alarms)
-                    if (alarms.isEmpty()) {
-                        binding.layoutEmptyState.visibility = View.VISIBLE
-                        binding.rvAlarms.visibility = View.GONE
-                    } else {
-                        binding.layoutEmptyState.visibility = View.GONE
-                        binding.rvAlarms.visibility = View.VISIBLE
+                    alarmAdapter.submitList(alarms) {
+                        if (alarms.isEmpty()) {
+                            binding.layoutEmptyState.visibility = View.VISIBLE
+                            binding.rvAlarms.visibility = View.GONE
+                        } else {
+                            binding.layoutEmptyState.visibility = View.GONE
+                            binding.rvAlarms.visibility = View.VISIBLE
+                        }
                     }
                 }
             }
